@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>string teoria</h1>
+    <script>
+        // script são uma cadeia de caracteres
+        // para caracteres especiais usamos a barra invertida
+
+        let stringdoida = "fernando \n \! \@ \# \% \¨\& \* \( ()*&¨%$#@@'";
+
+        console.log(stringdoida);
+
+        // concatenação de strings
+
+        let nome = "fernando";
+
+        // concatenando com o +
+        console.log(nome + ' é um amigo');
+
+        // concatenando com o .concat
+        console.log(nome.concat(" joao", nome, " absurdamente repeti"), nome.concat(" essa aqui foi so para zuar"));
+
+        console.log(nome, stringdoida);
+
+        // outra forma é o template string
+        let henrique = "henrique";
+
+        let templateStr = `${nome} ${henrique} ${1+1}`;
+        console.log(templateStr + " deu certo?");
+    </script>
+</body>
+</html>

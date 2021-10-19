@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>break e continue</h1>
+
+    <script>
+        console.log("break e continue");
+
+        // o break é um comando que podemos utilizar para parar/encerrar o loop na hora
+        let teste = 0;
+        while(teste < 10){
+
+            console.log(teste);
+
+            if(teste == 6){
+                console.log("encerrando");
+                break;
+            }
+
+            // incremento
+            teste++         
+        }
+
+        // o continue para a repetição atual do loop e inicia a proxima
+
+        let teste2 = 0;
+        while(teste2 < 10){
+            if(teste2 == 2){
+                console.log("vou pular esse carai");
+
+                teste2++;
+
+                continue;
+            }
+
+            console.log(teste2);
+
+            // incremento
+            teste2++;
+
+        }
+
+        // continue no for
+        let teste3 = 0;
+        console.log("-----------Inicio for absurdinho--------------");
+        for(teste3; teste3 < 10; teste3++){
+
+            if(teste3 == 8){
+                console.log("numero do cara la");
+                continue;
+            }
+
+            console.log(teste3);
+        }
+    </script>
+</body>
+</html>

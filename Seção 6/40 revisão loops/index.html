@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>revisão loops</h1>
+
+    <script>
+        console.log("---- revisão loops ----");
+
+        let alunos = [
+            {
+                nome: "fernando",
+                nota: 5,
+            },
+            {
+                nome: "cesar",
+                nota: 8,
+            },
+            {
+                nome: "juliana",
+                nota: 10,
+            },
+            {
+                nome: "pedro",
+                nota: 7,
+            },
+            {
+                nome: "maria",
+                nota: 10,
+            },
+            {
+                nome: "romario",
+                nota: 6,
+            },
+        ];
+
+        // percorra o vetor acima e informe se o aluno passou ou não
+        // condição para passar, nota maior que 7
+        console.log("---------- for -----------");
+        for(let i = 0; i < alunos.length; i++){
+            if(alunos[i].nota > 7){
+                console.log(`O aluno ${alunos[i].nome} foi aprovado`);
+            } else {
+                console.log(`O aluno ${alunos[i].nome} é BURRO`);
+            }
+        }
+
+        console.log("-------- for of ----------");
+        for(let aluno of alunos){
+            if(aluno.nota > 7){
+                console.log(`o aluno ${aluno.nome} passou`);
+            }
+        }
+
+
+        console.log("---fibonacci---");
+
+        function fibonacci(n){
+            let arrFibonacci = [0, 1, 1, 2, 3, 5, 8];
+            return arrFibonacci[n];
+        }
+
+        console.log(fibonacci(6));
+    </script>
+</body>
+</html>

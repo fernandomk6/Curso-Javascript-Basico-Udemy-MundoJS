@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+        // para criar um array vazio é so declarar uma variavel e atribuir [] a ela
+        // ex:
+
+        let arr = [];
+
+        // atribuindo valores
+
+        let arrAtr = [0, 1, 2, 3, 4];
+
+        // você pode adicionar valores de qualquer tipo no array
+
+        let arrMult = ["fernando", 1, true, 1.1, ["pedro", "emanoel"], 10];
+
+        // acessando valores
+
+        console.log(arrMult[0]);
+
+        // alterando valores
+
+        arrMult[0] = "Fernando Henrique";
+
+        console.log(arrMult[0]);
+
+        arrMult[10] = "indixe 10";
+
+        console.log(arrMult[10]);
+
+        // undefined
+        console.log(arrMult[9]);
+
+        // frescando
+        console.table(arrMult);
+
+        console.log(arrMult[4][0]);
+
+        // quando um vetor é criado ele recebe algumas propriedades que é interessante conhecermos
+
+        // length: exibe o comprimento do array
+
+        // tamanho 1
+        let vetorP = ["A", "B", 12];
+        console.log(vetorP.length);
+
+        // push, adiciona um valor ao final do array
+
+        let arrPush = ["fernando", "herique"];
+        console.log(arrPush[0] + ' ' + arrPush[1]);
+
+        arrPush.push("pontes");
+        arrPush.push("pereira");
+
+        console.log(arrPush[3]);
+
+        // pop: remove o ultimo item do array e retorna o valor romovido
+
+        arrPush.pop();
+
+        console.log(arrPush);
+        
+        arrPush.push("entrei nesse carai");
+
+        console.log(arrPush);
+
+        console.log(arrPush.pop());
+
+        console.log(arrPush);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("amigo meu irmão vim de um local totalmente absurdo");

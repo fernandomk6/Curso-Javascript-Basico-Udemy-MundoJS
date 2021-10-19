@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>olá mundo</h1> -->
+    <h2 id="idTitulo2">Titulo 2</h2>
+    <div>
+        <p>p dentro da div</p>
+    </div>
+    <ul>
+        <li>primeiro li</li>
+        <li>segundo li</li>
+        <li id="idItem">terceiro li</li>
+        <li class="itens">quarto li</li>
+        <li class="itens">quinto li</li>
+
+    </ul>
+
+    <script>
+        let titulo = document.querySelector("#idTitulo2");
+        let paragrafo = document.body.children[1].children[0];
+        let primeiroLi = document.querySelectorAll(".itens");
+
+        
+
+        console.log(titulo);
+        console.log(paragrafo);
+        console.log(primeiroLi);
+
+
+    </script>
+</body>
+</html>

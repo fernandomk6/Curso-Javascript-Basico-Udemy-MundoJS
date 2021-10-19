@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For em javascript</h1>
+
+    <script>
+        console.log("Bora começar essa porra");
+
+        // Exemplo for
+        for(let i = 0; i <= 10; i++){
+            console.log(i);
+        }
+
+        // let i = 0; corresponde a variavel de controle
+        // i <= 10; corresponde a condição, o loop so sera terminado quando a condição for satisfeita
+        // i++ corresponde ao incremento, cada vez que o loop rodar, a variavel de controle i, sera incrementada em 1 (i++ é igual a  i = i + 1)
+
+        // for, lendo vetores
+        let lista = ["cachorro", "gato", "macaco"];
+        console.log("tamanho da minha array lista é: " + lista.length);
+        for(let i = 0; i < lista.length; i++){
+            console.log(lista[i]);
+        }
+
+        // percorrendo o array e alterando os valores
+        
+        let pessoas = ["fernando", "joão", "beatriz", "marcos", "felipe"];
+        /*
+        for(let i = 0; i < pessoas.length; i++){
+            pessoas[i] = pessoas[i] + " alterado pelo for";
+            console.log(pessoas[i]);
+        }
+        */
+
+        // percorendo o array e encontrando alguem
+        for(let i = 0; i < pessoas.length; i++){
+
+            if(pessoas[i] == "marcos"){
+                console.log("achei o maldito marcos!");
+            }else if(pessoas[i] == "beatriz"){
+                console.log("achei a bia");
+            }else{
+                console.log("não encontrei nenhum " + pessoas[i]);
+            }
+
+        }
+
+        // for malucos porem possiveis
+        let i = 0;
+        for(; i < 5; i++){
+            console.log(i + " variavel declarada fora do for");
+        }
+
+        // perceba que nesse exemplo a variavel de controle foi declarada fora do for
+
+        // outro exemplo maluco
+        i = 0;
+        for( ; i < 10; ){
+            console.log("a variavel atualmente tem o valor de: " + i);
+            i = i + 2;
+        }
+        // perceba que o incremento é declarado dentro do for
+
+        // uma teste aqui 
+        for(let i = 0; i < 20; i = i + 3){
+            console.log(i + " deu certo amigo?");
+        }
+
+        // mono que porra é essa, for altamente pelado
+        let x = 0;
+        for( ; ; ){
+
+            if(x >= 10){
+                console.log(x + " cheguei ao meu limite");
+                break;
+            }
+
+            console.log(x + " amigo?");
+            x = x + 1;
+            
+        }
+        // perceba que aqui usamos o break, oque faz com o que imediatamente o loop seja interrompido
+
+
+        // um teste de escopo
+        for(let y = 0; y < 10; y++){
+            console.log(y);
+
+        }
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>olá mundo</h1>
+    <h2 class="titulo">olá mundo 2</h2>
+    <ul>
+        <li class="itens">teste</li>
+        <li class="itens">teste1</li>
+        <li class="itens">teste2</li>
+        <li class="itens">teste3</li>
+
+    </ul>
+    
+
+    <script>
+        // armazenando o elemento h1
+        //let h1 = document.querySelector("h1");
+        //console.log(h1);
+
+        // armazenando o texto do h1
+        // neste exemplo é armazenado apenas a string
+
+        /*
+        let textH1 = h1.textContent;
+        console.log(textH1);
+
+        let textH2 = document.querySelector(".titulo").textContent;
+        console.log(textH2);
+        */
+
+        let itens = document.querySelectorAll(".itens");
+        
+        let itensBom = [];
+
+        for(item of itens){
+            itensBom.push(item.textContent);
+        }
+
+        console.log(itensBom);
+        
+
+    </script>
+</body>
+</html>

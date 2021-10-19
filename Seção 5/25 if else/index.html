@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>if e else no JavaScript...</h1>
+    
+
+    <script>
+
+        console.log("Estou altamente vivo amigo");
+
+        // Estrutura basica
+        let a = 1;
+        if (a == 1) {
+            console.log("Brutalmente entrou no if");
+        }
+
+        // exemplo 2
+        let disponivel = true;
+        let quantidade = 6;
+
+        if (quantidade > 5 && disponivel) {
+            console.log("produto brutalmente disponivel para a venda");
+        }
+
+        // usando o else
+        let nome = "fela";
+
+        if (nome == "fernando") {
+            console.log("olá amigo fernando");
+        } else {
+            console.log("brutalmente não o conheço amigo");
+        }
+
+        // usando o else if
+
+        let cidade = "rio de janeiro";
+
+        if (cidade == "juazeiro"){
+            console.log("juazeiro");
+        } else if (cidade == "marrocos") {
+            console.log("marrocs");
+        } else if (cidade == "rio de janeiro"){
+            console.log("rio de janeiro");
+        } else {
+            console.log("meu irmão deixe de viadagem");
+        }
+
+        // Escopo, o VAR possui apenas escopo global e de bloco para funções
+        // Escopo de bloco, toda variavel declarada dentro de umas  { } (com exceção do VAR) so pode ser acessada dentro da chave
+        // um let declarado no escopo global é acessado de qualquer local.
+        // Escopo local é o que é declarado dentro de chaves {}
+
+    </script>
+</body>
+</html>

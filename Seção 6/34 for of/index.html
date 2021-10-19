@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>for of em javascript</h1>
+
+    <script>
+        console.log("e la vamos nois...");
+
+        // for of é especifico para um array
+        let diasSemana = ["segunda", "terça", "quarta", "quinta", "sexta", "sabado", "domingo"];
+        for (const dias of diasSemana) {
+            console.log(dias);
+        }
+
+        // dias é o nome dado a todos os indices
+        // diasSemana é o array
+
+        // pode ser lido como, para cada indice do array
+        // pega o array (diasSemana) e o indice (dias) e meche em cada um deles ate o final do array
+
+        // um outro exemplo
+        for(numero of [1,2,3,4,5,6,7,8,9]){
+            console.log(numero);
+        }
+
+        
+    </script>
+</body>
+</html>

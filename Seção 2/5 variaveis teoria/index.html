@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("olá mundo JS");
+
+        // var declara uma variavel podendo ter um valor atribuido junto a sua criação
+        // Ex:
+        var umNumero;
+        var umNumero = 12;
+
+        console.log(umNumero);
+
+        // let declara uma variavel de escopo de bloco (escopo local), podendo ter um valor atribuido junto a sua criação
+        // ex:
+
+        
+        let nome = "fernando";
+
+        console.log(nome);
+
+        // const declara uma variavel apenas de leitura, depois de declarada seu valor não pode mais ser alterado
+        // uma const deve ter seu valor atribuido no momento da declaração;
+        // ex:
+        
+        const constnome = "fernando constante";
+
+        console.log(constnome);
+
+        // não é muito recomendado o uso do var pelas boas praticas de programação
+
+        // o java script é case-sensitive, ou seja a variavel nome é diferente da variavel NOME
+        // ex:
+
+        let minuscula = "minuscula";
+        let Minuscula = "Minuscula com primeira maiuscula";
+
+        console.log(minuscula + " toda minuscula?");
+        console.log(Minuscula + " toda minuscula mas com a primeira letra maiuscula");
+
+        // Evite cedilhas e acentuação no nome das variaveis
+
+        // A variavel precisa necessariamente iniciar com pelo menos uma letra, depois pode adicionar numeros de 0 a 9
+        // ex:
+
+        let fernando2000 = "fernando 2000";
+        console.log(fernando2000);
+
+        // underline e cifroes são permitidos, mas o uso não é recomendado, pois em varias bibliotecas externas, usa-se bastente eles
+        // o que pode causar confusão
+
+        // ex:
+        
+        let _variavel = "_varialvel";
+        let $variavel = "$variavel";
+
+        console.log(_variavel);
+        console.log($variavel);
+
+    </script>
+</body>
+</html>

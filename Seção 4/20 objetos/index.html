@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objetos</h1>
+
+    <script>
+        console.log("Estou vivo amigo");
+
+        // Objeto é um tipo de dado composto pelos outros tipos de dados
+
+        // criamos o objeto carro
+        let carro  = {
+            rodas: 4,
+            portas: 4,
+            nome: "um carro",
+            aVenda: true
+        };
+
+        // criando um objeto vazio
+
+        let objVaz = {};
+
+        // criando objeto com propriedades (variaveis)
+
+        let moto = {
+            rodas: 2,
+            estilo: true
+        };
+
+        // alterar uma propriedade ao objeto
+        carro.portas = 5; // absurdo carro de 5 portas fôodasss
+
+        // ou pode ser feito dessa forma também
+        carro["portas"] = 6; // agora descarrilhei kkk
+
+        // adicionar uma propriedade ao objeto
+        carro.bonito = true;
+
+        // perceba que a propriedade bonita não existe na declaração da variavel carro
+
+
+        // acessando os dados do objeto
+        console.log(carro.rodas);
+
+
+
+    </script>
+</body>
+</html>

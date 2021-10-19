@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funções em JS...</h1>
+
+    <script>
+        console.log("estou vivo amigo aprendendo fuckings functions");
+
+        // funções sãoc criadas para armazenar uma sequencia de comandos
+
+        // criando função e atribuindo a uma variavel
+        let olaMundo = function() {
+            console.log("olá mundo");
+            console.log("olá mundo");
+            console.log("mundo?");
+            console.log("...");
+        }
+
+        olaMundo();
+
+        // criando a função na tora com parametros pq o cabra ta o pica
+        function dizerNome(nome) {
+            console.log("olá meu nome é " + nome);
+        }
+
+        dizerNome("fernando");
+
+        // trabalhando com parametros
+        function somar(a, b) {
+            let resultado = a + b;
+            console.log(resultado);
+        }
+
+        somar(2,3);
+
+        // criando outra função somar
+        let funcSomar = function(x, y){
+            let resultado = x + y;
+            console.log(resultado);
+        }
+
+        funcSomar(50,100);
+
+        // usando o return das functions
+        function falar(pNome, sNome){
+            return pNome + " " + sNome;
+            // observação: o Return interrompe a função
+        }
+
+        console.log(falar("fernando", "henrique"));
+
+        let int = 1;
+        let str = "fer";
+
+        somar(int, str);
+
+        // MUITO IMPORTANTE
+        // SE SOMAR UM NUMERO + UMA STRING, O NUMERO SERÁ CONVERTIDO EM STRING E A STRING SERA CONCATENADA AO NUMERO E NÃO SOMADA
+        // EX
+        // 10 + "10" = 1010;
+
+    </script>
+</body>
+</html>

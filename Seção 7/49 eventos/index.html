@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Eventos em JS</h1>
+    <button id="diretoNaTag" onclick="diretoNaTag()">Direto na tag</button>
+    <input type="submit" id="noElementoJS" value="enviar">
+    <button id="noEventListener">Usando o eventListener</button>
+
+
+    <script>
+        console.log("Eventos em JS");
+
+        // eventos é uma forma de executar uma função, quando algo acontece na tela
+
+        // entre os eventos mais comuns podemos citar
+
+            // click: clicar
+            // mouseover: passar o mouse
+            // change: quando ocorre uma mudança
+            // load: ao carregar
+            // keydown: ao precionar uma tecla
+
+        // criando eventos: Existem 3 formas de criamos eventos
+            // 1 direto na tag, adicionando o on+evento na tag html e apontando para a função
+            // 2 no on+evento do elemento, adicionando o evento na propriedade on+evento no elemento javascript que representa a tag
+            // 3 usando o eventListener, adicionando um eventListener para o elemento
+
+        // 1 direto na tag exemplo
+
+        function diretoNaTag(){
+            alert("clicaram em direto na tag");
+        } 
+        
+        // perceba que o button de id diretoNaTag esta com a propriedade onClick apontando para a função diretoNaTag()
+
+        // 2 no onEvento do elemento JavaScript
+        
+        function olaMundo(){
+            console.log("olá mundo");
+        }
+
+        let buttom = document.querySelector("#noElementoJS");
+        buttom.onclick = olaMundo;
+
+        // !!! atenção não passar a função com parametros, passar apenas o nome da função
+        // !!! atenção o evento sempre é escrito todo com letras minuscula, não usar onCLick, dara erro
+
+        // esse formato é parecido com o anterior, mas move a logica para o javascript, ele so não lida bem com multiplos eventos
+
+        // 3 usando o eventListener
+
+        function olaMundo2(){
+            console.log("olá executei pelo eventListener");
+        }
+
+        let btnListener = document.querySelector("#noEventListener");
+        btnListener.addEventListener("click", olaMundo2);
+        btnListener.addEventListener("click", olaMundo);
+
+        // perceba que usando o eventListener é possivel manipular multiplos eventos
+
+        // removendo um evento com o eventListener
+        btnListener.removeEventListener("click", olaMundo2);
+
+
+
+
+
+        
+        
+    </script>
+</body>
+</html>

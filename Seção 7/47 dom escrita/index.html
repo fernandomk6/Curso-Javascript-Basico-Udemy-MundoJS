@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dom escrita</h1>
+    <p>oi eu sou um paragrafo ainda não alterado</p>
+    <p id="innerHTML">oi, eu sou um paragrafo de testes para o innerHTML</p>
+    <form action="">
+        <input type="text" value="fernando">
+    </form>
+
+    <ul>
+        <li class="azul fade clicked">teste1</li>
+        <li class="azul amarelo verde vermelho" id="brazil">teste2</li>
+        <li class="azul branco vermelho roxo" id="france">teste3</li>
+        <li>teste4</li>
+        <li>teste5</li>
+    </ul>
+
+    <div>
+        <p>olá amigo sou um p escondido</p>
+    </div>
+
+    <script>
+        console.log("---dom escrita---");
+        
+        // armazenando e imprimindo o conteudo da primeira tag p
+        let paragrafo = document.querySelector("p").textContent;
+        console.log(paragrafo);
+
+        // alterando o conteudo da variavel paragrafo
+        paragrafo = "oi, eu sou um paragrafo alterado";
+
+        // alterando o texto da tag paragrafo via javaScript
+        document.querySelector("p").textContent = paragrafo;
+
+        // alterando o value via javaScript
+        document.querySelector("input").value = "fernando henrique";
+
+        // ClassList
+        // adicionando uma class
+        document.querySelector(".azul").classList.add("unClicked");
+
+        // verificando se foi adicionada
+        console.log(document.querySelector(".azul").className);
+
+        // removendo uma class
+        document.querySelector("#brazil").classList.remove("vermelho");
+
+        // verificando se foi realmente removida
+        console.log(document.querySelector("#brazil").className);
+
+        // usando o toggle (o toggle adiciona a class caso ela não exista no elemento, caso ela exista ele remove a class
+        document.querySelector("#france").classList.toggle("roxo");
+
+        // verificando o que aconteceu apos o toggle
+        console.log(document.querySelector("#france").className); // removeu o roxo pois a classe existia
+
+        // tentando agora com uma class que não exista vamos ver o que vai acontecer
+        document.querySelector("#france").classList.toggle("preto");
+
+        console.log(document.querySelector("#france").className); // perceba que foi adicionado a class preto, pois antes ela não existia
+
+        // InnerHTML
+        // InnerHTML é uma ferramenta poderosa que permite adicionar HTML dentro do HTML, vamos ver um exemplo
+        let paragrafoInnerHTML = document.querySelector("#innerHTML");
+        paragrafoInnerHTML.innerHTML = "<strong>Olá</strong> <s>Mundo</s>"; // com o innerHTML vocÊ adiciona algo dentro do texto do elemento
+
+        // um teste...
+        // paragrafoInnerHTML.innerHTML = paragrafoInnerHTML;
+        console.log(paragrafoInnerHTML.textContent);
+
+        // Atenção ao usar o innerHTML pois ele abre espaço para ataques cross-script
+
+        // mais testes
+
+        let pEscondido = document.querySelector("div").querySelector("p");
+        console.log(pEscondido);
+
+
+
+    </script>
+</body>
+</html>
