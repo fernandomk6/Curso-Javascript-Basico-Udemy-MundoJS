@@ -1,4 +1,4 @@
-# Curso-Javascript-Basico-Udemy-MundoJS
+# Curso Javascript Basico Udemy MundoJS
 
 O curso de JavaScript Básico é voltado para pessoas iniciando no mundo da programação, programadores Junior, web designers e estudantes do primeiro ano dos cursos de Computação.
 
